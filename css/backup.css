@@ -19,7 +19,7 @@ body{
 /*BOOTSTRAP*/
 
 
-/*ANIMATION*/
+/*ANIMATION
 .cap_nav_lista_li:hover{
     animation: lista 1s ease-in;
 }

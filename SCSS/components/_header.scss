@@ -1,6 +1,14 @@
-.cap_logo{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 50px;
+header{
+    nav{
+        div{
+            a{
+                .cap_logo{
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
 }

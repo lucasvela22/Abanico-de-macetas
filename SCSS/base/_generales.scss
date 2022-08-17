@@ -1,0 +1,126 @@
+@media screen and (max-width:1030px){
+    main{
+        section{
+            div{
+                div{
+                    div{
+                        .imagen_uno{
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .producto{
+            height: 1400px;
+            .producto_div{
+                height: 1300px;
+                flex-direction: column;
+            }
+        .producto_dos{
+            flex-direction: column;
+            height: 1400px;
+        }
+        .producto_macetas_oferta{
+            flex-direction: column;
+            height: 1400px;
+        }
+        .main_banner{
+            flex-direction: column;
+            height: 750px;
+        }
+    }
+    }
+}
+
+@media screen and (max-width:610px){
+    main{
+        .producto_mapa{
+            .contacto_mapa{
+                div{
+                    .map_doc{
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+        .main_banner{
+            div{
+                .main_banner_img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+        section{
+            div{
+                div{
+                    div{
+                        .imagen_uno{
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            div{
+                div{
+                    .map_doc{
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+    .accordion{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:450px){
+    main{
+        section{
+            div{
+                div{
+                    .map_doc{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        .main_banner{
+            div{
+                .main_banner_img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .accordion{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:400px){
+    main{
+        section{
+            div{
+                div{
+                    div{
+                        .imagen_uno{
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
