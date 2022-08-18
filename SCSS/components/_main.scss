@@ -1,12 +1,12 @@
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixin";
 //*Index
     main{
         .producto{
-        width: 100%;
-        height: 650px;
+        @include medidas (100%, 650px);
         background-image: url(../img/fondo-seg.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        @extend %bg-img;
             .producto_titulo{
             height: 50px;
             background-color: black;
@@ -16,22 +16,20 @@
             .producto_div{
             height: 600px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: map-get($mapa , jc-se);
             align-items: center;
                 .producto_div_div{
-                width: 300px;
-                height: 400px;
+                @include medidas (300px, 400px);
                 text-align: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: map-get($mapa , jc-sb);
                     h3{
                     background-color: black;
                     color: white;
                     }
                     img{
-                    width: 300px;
-                    height: 300px;
+                    @include medidas (300px, 300px);
                         .imagen_uno{
                         height: 650px;
                         }
@@ -51,153 +49,129 @@
     }
 
 //*Productos / Plantas
-    main{
-        .producto_dos{
-        width: 100%;
-        height: 650px;
-        background-image: url(../img/fondo.jpg);
-        background-position: center;
-        background-size: cover; 
-        background-attachment: fixed;
-            .producto_titulo{
-            height: 50px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            }
-            .producto_div{
-            height: 600px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-                .producto_div_div{
-                width: 300px;
-                height: 400px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                    h3{
-                    background-color: black;
-                    color: white;
-                    }
-                    img{
-                    width: 300px;
-                    height: 300px;
-                    }
-                    a{
-                    text-decoration: none;
-                    background-color: black;
-                    color: white;
-                    padding: 5px;
-                    &:hover{
-                        color: blueviolet;
-                    }
-                    }
-                }
-            }
-        }
-    }
-    main{
-        .producto_macetas_oferta{
-        width: 100%;
-        height: 650px;
-        background-image: url(../img/fondo-seg.jpg);
-        background-position: center;
-        background-size: cover; 
-        background-attachment: fixed;
+main{
+    .producto_dos{
+    @include medidas (100%, 650px);
+    background-image: url(../img/fondo.jpg);
+    @extend %bg-img;
         .producto_titulo{
-            height: 50px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            }
-            .producto_div{
-            height: 600px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-                .producto_div_div{
-                width: 300px;
-                height: 400px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                    h3{
-                    background-color: black;
-                    color: white;
-                    }
-                    img{
-                    width: 300px;
-                    height: 300px;
-                    }
-                    a{
-                    text-decoration: none;
-                    background-color: black;
-                    color: white;
-                    padding: 5px;
-                    &:hover{
-                        color: blueviolet;
-                    }
-                    }
-                }
-            }
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
         }
-    }
-
-//*Contacto
-    main{
-        .main_banner{
-        width: 100%;
-        height: 650px;
-        background-image: url(../img/fondo.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        .producto_div{
+        height: 600px;
         display: flex;
-        justify-content: space-around;
+        justify-content: map-get($mapa , jc-se);
         align-items: center;
-            div{
-                .main_banner_titulo{
-                background-color: black;
-                color: white;
-                width: 300px;
-                margin-bottom: 5px;
-                text-align: center;
-                }
-                .main_banner_img{
-                width: 400px;
-                height: 500px;
-                border: 5px solid seashell;  
-                }
-            }
-        }
-        .producto_mapa{
-        width: 100%;
-        height: 650px;
-        background-image: url(../img/fondo-seg.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-            .producto_titulo{
-            height: 50px;
-            background-color: black;
-            color: white;
+            .producto_div_div{
+            @include medidas (300px, 400px);
             text-align: center;
-            }
-            .contacto_mapa{
-            height: 600px;
             display: flex;
             flex-direction: column;
-            justify-content:space-evenly;
-            align-items: center;
-                .map_doc{
-                width: 500px;
-                height: 500px;
+            justify-content: map-get($mapa , jc-sb);
+                h3{
+                background-color: black;
+                color: white; 
+                }
+                img{
+                @include medidas (300px, 300px);
+                }
+                a{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 5px;
                 }
             }
         }
     }
+}
+main{
+    .producto_macetas_oferta{
+    @include medidas (100%, 650px);
+    background-image: url(../img/fondo-seg.jpg);
+    @extend %bg-img;
+    .producto_titulo{
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        }
+        .producto_div{
+        height: 600px;
+        display: flex;
+        justify-content: map-get($mapa , jc-se);
+        align-items: center;
+            .producto_div_div{
+            @include medidas (300px, 400px);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: map-get($mapa , jc-sb);
+                h3{
+                background-color: black;
+                color: white;
+                }
+                img{
+                @include medidas (300px, 300px);
+                }
+                a{
+                text-decoration: none;
+                background-color: black;
+                color: white;
+                padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+//*Contacto
+main{
+    .main_banner{
+    @include medidas (100%, 650px);
+    background-image: url(../img/fondo.jpg);
+    @extend %bg-img;
+    display: flex;
+    justify-content: map-get($mapa , jc-sa );
+    align-items: center;
+        div{
+            .main_banner_titulo{
+            background-color: black;
+            color: white;
+            width: 300px;
+            margin-bottom: 5px;
+            text-align: center;
+            }
+            .main_banner_img{
+            @include medidas (400px, 500px);
+            border: 5px solid seashell;  
+            }
+        }
+    }
+    .producto_mapa{
+    @include medidas (100%, 650px);
+    background-image: url(../img/fondo-seg.jpg);
+    @extend %bg-img;
+        .producto_titulo{
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        }
+        .contacto_mapa{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content:map-get($mapa , jc-se);
+        align-items: center;
+            .map_doc{
+            @include medidas (500px, 500px);
+            }
+        }
+    }
+}
 
 
