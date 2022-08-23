@@ -5,7 +5,7 @@ header nav div a .cap_logo {
   margin: 10px;
   border-radius: 50px; }
 
-main .producto, main .producto_dos, main .producto_macetas_oferta, main .main_banner, main .producto_mapa {
+main .producto, main .producto_dos, main .producto_macetas_oferta, main .main_banner, main .producto_mapa, main .servicios {
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
@@ -148,7 +148,23 @@ main .producto_mapa {
     align-items: center; }
     main .producto_mapa .contacto_mapa .map_doc {
       width: 500px;
-      height: 500px; }
+      height: 400px; }
+
+.accordion {
+  width: 400px; }
+
+main .servicios {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/jardin.jpg); }
+  main .servicios p {
+    color: white;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px; }
 
 * {
   margin: 0%;
@@ -189,9 +205,9 @@ body {
       flex-direction: column; }
   main .producto_dos {
     flex-direction: column;
-    height: 1400px; }
+    height: 1500px; }
     main .producto_dos .producto_div {
-      height: 1300px;
+      height: 1400px;
       flex-direction: column; }
   main .producto_macetas_oferta {
     flex-direction: column;
@@ -201,7 +217,12 @@ body {
       flex-direction: column; }
   main .main_banner {
     flex-direction: column;
-    height: 750px; } }
+    height: 750px; }
+  main .servicios {
+    height: 500px; }
+    main .servicios p {
+      height: 500px;
+      font-size: 35px; } }
 
 @media screen and (max-width: 610px) {
   main .producto_mapa .contacto_mapa div .map_doc {
@@ -215,6 +236,11 @@ body {
   main section div div .map_doc {
     width: 400px;
     height: 400px; }
+  main .servicios {
+    height: 600px; }
+    main .servicios p {
+      height: 600px;
+      font-size: 30px; }
   .accordion {
     width: 350px; } }
 
@@ -224,6 +250,11 @@ body {
     height: 300px; }
   main .main_banner div .main_banner_img {
     width: 300px; }
+  main .servicios {
+    height: 600px; }
+    main .servicios p {
+      height: 600px;
+      font-size: 25px; }
   .accordion {
     width: 300px; } }
 

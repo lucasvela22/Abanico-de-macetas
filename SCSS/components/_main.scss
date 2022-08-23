@@ -168,8 +168,30 @@ main{
         justify-content:map-get($mapa , jc-se);
         align-items: center;
             .map_doc{
-            @include medidas (500px, 500px);
+            @include medidas (500px, 400px);
             }
+        }
+    }
+}
+
+
+.accordion{
+    width:400px;
+}
+
+main{
+    .servicios{
+        @include medidas (100%, 400px);
+        background-image: url(../img/jardin.jpg);
+        @extend %bg-img;
+        p{
+            color: white;
+            height: 400px;
+            margin-left:50px;
+            margin-right:50px;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
         }
     }
 }

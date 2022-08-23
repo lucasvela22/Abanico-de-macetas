@@ -22,9 +22,9 @@
         }
         .producto_dos{
             flex-direction: column;
-            height: 1400px;
+            height: 1500px;
             .producto_div{
-                height: 1300px;
+                height: 1400px;
                 flex-direction: column;
             }
         }
@@ -39,6 +39,13 @@
         .main_banner{
             flex-direction: column;
             height: 750px;
+        }
+        .servicios{
+            height: 500px;
+            p{
+                height: 500px;
+                font-size: 35px;
+            }
         }
     }
 }
@@ -84,6 +91,13 @@
                 }
             }
         }
+        .servicios{
+            height: 600px;
+            p{
+                height: 600px;
+                font-size: 30px;
+            }
+        }
     }
     .accordion{
         width: 350px;
@@ -107,6 +121,13 @@
                 .main_banner_img{
                     width: 300px;
                 }
+            }
+        }
+        .servicios{
+            height: 600px;
+            p{
+                height: 600px;
+                font-size: 25px;
             }
         }
     }
