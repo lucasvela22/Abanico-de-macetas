@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap");
-header nav div a .cap_logo {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  border-radius: 50px; }
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  font-family: 'Reem Kufi', sans-serif; }
+
+header nav {
+  background-color: #cfc4c4; }
+  header nav div a .cap_logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50px; }
 
 main .producto, main .producto_dos, main .producto_macetas_oferta, main .main_banner, main .producto_mapa, main .servicios {
   background-position: center;
@@ -44,8 +54,6 @@ main .producto {
         background-color: black;
         color: white;
         padding: 5px; }
-        main .producto .producto_div .producto_div_div a:hover {
-          color: blueviolet; }
 
 main .producto_dos {
   width: 100%;
@@ -62,7 +70,7 @@ main .producto_dos {
     justify-content: space-evenly;
     align-items: center; }
     main .producto_dos .producto_div .producto_div_div {
-      width: 300px;
+      width: 320px;
       height: 400px;
       text-align: center;
       display: flex;
@@ -72,7 +80,7 @@ main .producto_dos {
         background-color: black;
         color: white; }
       main .producto_dos .producto_div .producto_div_div img {
-        width: 300px;
+        width: 320px;
         height: 300px; }
       main .producto_dos .producto_div .producto_div_div a {
         text-decoration: none;
@@ -95,7 +103,7 @@ main .producto_macetas_oferta {
     justify-content: space-evenly;
     align-items: center; }
     main .producto_macetas_oferta .producto_div .producto_div_div {
-      width: 300px;
+      width: 320px;
       height: 400px;
       text-align: center;
       display: flex;
@@ -105,7 +113,7 @@ main .producto_macetas_oferta {
         background-color: black;
         color: white; }
       main .producto_macetas_oferta .producto_div .producto_div_div img {
-        width: 300px;
+        width: 320px;
         height: 300px; }
       main .producto_macetas_oferta .producto_div .producto_div_div a {
         text-decoration: none;
@@ -120,16 +128,24 @@ main .main_banner {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  main .main_banner .boostrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; }
   main .main_banner div .main_banner_titulo {
     background-color: black;
     color: white;
-    width: 300px;
+    width: 400px;
     margin-bottom: 5px;
+    margin-left: 5px;
     text-align: center; }
   main .main_banner div .main_banner_img {
     width: 400px;
     height: 500px;
-    border: 5px solid seashell; }
+    border: 5px solid seashell;
+    margin-left: 5px; }
 
 main .producto_mapa {
   width: 100%;
@@ -146,9 +162,18 @@ main .producto_mapa {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
+    main .producto_mapa .contacto_mapa .map {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center; }
     main .producto_mapa .contacto_mapa .map_doc {
       width: 500px;
       height: 400px; }
+    main .producto_mapa .contacto_mapa div p {
+      background-color: black;
+      color: white; }
 
 .accordion {
   width: 400px; }
@@ -175,25 +200,83 @@ body {
 
 .pie {
   width: 100%;
-  height: 150px;
+  height: 400px;
   background-color: #cfc4c4;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
+  .pie .pie_primero {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .pie .pie_primero .redes {
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px; }
+  .pie .pie_segunda {
+    height: 250px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .pie .pie_segunda div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px; }
+    .pie .pie_segunda .lista li {
+      list-style: none; }
+      .pie .pie_segunda .lista li img {
+        width: 30px;
+        height: 30px; }
+      .pie .pie_segunda .lista li a {
+        color: black;
+        text-decoration: none; }
   .pie .cap_logo {
     width: 100px;
     height: 100px;
     margin: 10px;
     border-radius: 50px; }
-  .pie div {
-    height: 150px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .pie div a img {
-      width: 50px;
-      height: 50px; }
+  .pie a img {
+    width: 50px;
+    height: 50px; }
+
+@media screen and (max-width: 1110px) {
+  main .main_banner {
+    flex-direction: column;
+    width: 100%;
+    height: 1200px; }
+  main .producto_mapa {
+    height: 1100px; }
+    main .producto_mapa .contacto_mapa {
+      height: 1100px; }
+      main .producto_mapa .contacto_mapa .map {
+        height: 900px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; } }
+
+@media screen and (max-width: 760px) {
+  .pie {
+    height: 600px; }
+    .pie .pie_segunda {
+      height: 500px;
+      flex-wrap: wrap;
+      justify-content: center; }
+  main .main_banner {
+    height: 1350px;
+    justify-content: space-evenly; }
+    main .main_banner .boostrap {
+      height: 750px;
+      flex-direction: column;
+      justify-content: space-evenly; }
+  main .producto_mapa .contacto_mapa div p {
+    width: 500px; } }
 
 @media screen and (max-width: 1030px) {
   main section div div div .imagen_uno {
@@ -201,8 +284,9 @@ body {
   main .producto {
     height: 1400px; }
     main .producto .producto_div {
-      height: 1300px;
-      flex-direction: column; }
+      height: 1350px;
+      flex-direction: column;
+      justify-content: space-evenly; }
   main .producto_dos {
     flex-direction: column;
     height: 1500px; }
@@ -215,9 +299,6 @@ body {
     main .producto_macetas_oferta .producto_div {
       height: 1300px;
       flex-direction: column; }
-  main .main_banner {
-    flex-direction: column;
-    height: 750px; }
   main .servicios {
     height: 500px; }
     main .servicios p {
@@ -225,12 +306,19 @@ body {
       font-size: 35px; } }
 
 @media screen and (max-width: 610px) {
+  .pie {
+    height: 700px; }
+    .pie .pie_segunda {
+      flex-wrap: wrap;
+      justify-content: center; }
+  main .producto_mapa .contacto_mapa div p {
+    width: 400px; }
   main .producto_mapa .contacto_mapa div .map_doc {
     width: 320px;
     height: 320px; }
   main .main_banner div .main_banner_img {
-    width: 350px;
-    height: 350px; }
+    width: 400px;
+    height: 420px; }
   main section div div div .imagen_uno {
     height: 400px; }
   main section div div .map_doc {
@@ -241,6 +329,36 @@ body {
     main .servicios p {
       height: 600px;
       font-size: 30px; }
+  main .producto {
+    height: 1350px; }
+    main .producto .producto_div {
+      height: 1300px; }
+      main .producto .producto_div .producto_div_div {
+        width: 300px;
+        height: 350px; }
+        main .producto .producto_div .producto_div_div img {
+          width: 300px;
+          height: 250px; }
+  main .producto_dos {
+    height: 1400px; }
+    main .producto_dos .producto_div {
+      height: 1350px; }
+      main .producto_dos .producto_div .producto_div_div {
+        width: 300px;
+        height: 350px; }
+        main .producto_dos .producto_div .producto_div_div img {
+          width: 300px;
+          height: 250px; }
+  main .producto_macetas_oferta {
+    height: 1400px; }
+    main .producto_macetas_oferta .producto_div {
+      height: 1350px; }
+      main .producto_macetas_oferta .producto_div .producto_div_div {
+        width: 300px;
+        height: 350px; }
+        main .producto_macetas_oferta .producto_div .producto_div_div img {
+          width: 300px;
+          height: 250px; }
   .accordion {
     width: 350px; } }
 
@@ -248,8 +366,14 @@ body {
   main section div div .map_doc {
     width: 300px;
     height: 300px; }
-  main .main_banner div .main_banner_img {
+  main .producto_mapa .producto_titulo {
+    height: 60px; }
+  main .producto_mapa .contacto_mapa div p {
     width: 300px; }
+  main .main_banner div .main_banner_titulo {
+    width: 320px; }
+  main .main_banner div .main_banner_img {
+    width: 320px; }
   main .servicios {
     height: 600px; }
     main .servicios p {
@@ -260,4 +384,14 @@ body {
 
 @media screen and (max-width: 400px) {
   main section div div div .imagen_uno {
-    height: 300px; } }
+    height: 300px; }
+  main .producto {
+    height: 1300px; }
+    main .producto .producto_div {
+      height: 1250px; }
+      main .producto .producto_div .producto_div_div {
+        width: 250px;
+        height: 300px; }
+        main .producto .producto_div .producto_div_div img {
+          width: 250px;
+          height: 250px; } }

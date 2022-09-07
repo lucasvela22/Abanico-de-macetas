@@ -1,3 +1,57 @@
+@import "./mixin";
+
+@media screen and (max-width: 1110px){
+main{
+    .main_banner{
+        flex-direction: column;
+        @include medidas (100%, 1200px);
+    }
+    .producto_mapa{
+        height: 1100px;
+        .contacto_mapa{
+            height: 1100px;
+            .map{
+                height: 900px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 760px){
+    .pie{
+    height: 600px;
+        .pie_segunda{
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    main{
+        .main_banner{
+            height: 1350px;
+            justify-content: space-evenly;
+            .boostrap{
+                height: 750px;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+        }
+        .producto_mapa{
+            .contacto_mapa{
+                div{
+                    p{
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
 @media screen and (max-width:1030px){
     main{
         section{
@@ -16,8 +70,9 @@
         .producto{
             height: 1400px;
             .producto_div{
-                height: 1300px;
+                height: 1350px;
                 flex-direction: column;
+                justify-content: space-evenly;
             }
         }
         .producto_dos{
@@ -36,10 +91,6 @@
                 flex-direction: column;
             }
         }
-        .main_banner{
-            flex-direction: column;
-            height: 750px;
-        }
         .servicios{
             height: 500px;
             p{
@@ -51,10 +102,20 @@
 }
 
 @media screen and (max-width:610px){
+    .pie{
+        height: 700px;
+            .pie_segunda{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
     main{
         .producto_mapa{
             .contacto_mapa{
                 div{
+                    p{
+                        width: 400px;
+                    }
                     .map_doc{
                         width: 320px;
                         height: 320px;
@@ -65,8 +126,8 @@
         .main_banner{
             div{
                 .main_banner_img{
-                    width: 350px;
-                    height: 350px;
+                    width: 400px;
+                    height: 420px;
                 }
             }
         }
@@ -98,6 +159,42 @@
                 font-size: 30px;
             }
         }
+        .producto{
+            height: 1350px;
+            .producto_div{
+                height: 1300px;
+                .producto_div_div{
+                    @include medidas (300px, 350px);
+                    img{
+                        @include medidas (300px, 250px);
+                    }
+                }
+            }
+        }
+        .producto_dos{
+            height: 1400px;
+            .producto_div{
+                height: 1350px;
+                .producto_div_div{
+                    @include medidas (300px, 350px);
+                    img{
+                        @include medidas (300px, 250px);
+                    }
+                }
+            }
+        }
+        .producto_macetas_oferta{
+            height: 1400px;
+            .producto_div{
+                height: 1350px;
+                .producto_div_div{
+                    @include medidas (300px, 350px);
+                    img{
+                        @include medidas (300px, 250px);
+                    }
+                }
+            }
+        }
     }
     .accordion{
         width: 350px;
@@ -116,10 +213,25 @@
                 }
             }
         }
+        .producto_mapa{
+            .producto_titulo{
+                height: 60px;
+            }
+            .contacto_mapa{
+                div{
+                    p{
+                        width: 300px;
+                    }
+                }
+            }
+        }
         .main_banner{
             div{
+                .main_banner_titulo{
+                    width: 320px;
+                }
                 .main_banner_img{
-                    width: 300px;
+                    width: 320px;
                 }
             }
         }
@@ -145,6 +257,18 @@
                         .imagen_uno{
                             height: 300px;
                         }
+                    }
+                }
+            }
+        }
+        .producto{
+            height: 1300px;
+            .producto_div{
+                height: 1250px;
+                .producto_div_div{
+                    @include medidas (250px, 300px);
+                    img{
+                        @include medidas (250px, 250px);
                     }
                 }
             }

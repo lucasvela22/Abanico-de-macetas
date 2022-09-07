@@ -1,6 +1,7 @@
-
+@import "../base/variables";
 header{
     nav{
+    background-color: $color-footer;
         div{
             a{
                 .cap_logo{

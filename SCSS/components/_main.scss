@@ -39,9 +39,6 @@
                     background-color: black;
                     color: white;
                     padding: 5px;
-                    &:hover{
-                        color: blueviolet;
-                    }
                     }
                 }
             }
@@ -66,7 +63,7 @@ main{
         justify-content: map-get($mapa , jc-se);
         align-items: center;
             .producto_div_div{
-            @include medidas (300px, 400px);
+            @include medidas (320px, 400px);
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -76,7 +73,7 @@ main{
                 color: white; 
                 }
                 img{
-                @include medidas (300px, 300px);
+                @include medidas (320px, 300px);
                 }
                 a{
                 text-decoration: none;
@@ -105,7 +102,7 @@ main{
         justify-content: map-get($mapa , jc-se);
         align-items: center;
             .producto_div_div{
-            @include medidas (300px, 400px);
+            @include medidas (320px, 400px);
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -115,7 +112,7 @@ main{
                 color: white;
                 }
                 img{
-                @include medidas (300px, 300px);
+                @include medidas (320px, 300px);
                 }
                 a{
                 text-decoration: none;
@@ -137,17 +134,27 @@ main{
     display: flex;
     justify-content: map-get($mapa , jc-sa );
     align-items: center;
+        .boostrap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
         div{
             .main_banner_titulo{
             background-color: black;
             color: white;
-            width: 300px;
+            width: 400px;
             margin-bottom: 5px;
+            margin-left: 5px;
             text-align: center;
+            
             }
             .main_banner_img{
             @include medidas (400px, 500px);
             border: 5px solid seashell;  
+            margin-left: 5px;
             }
         }
     }
@@ -167,8 +174,21 @@ main{
         flex-direction: column;
         justify-content:map-get($mapa , jc-se);
         align-items: center;
+            .map{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
             .map_doc{
             @include medidas (500px, 400px);
+            }
+            div{
+                p{
+                    background-color: black;
+                    color: white;
+                }
             }
         }
     }
@@ -178,7 +198,7 @@ main{
 .accordion{
     width:400px;
 }
-
+//* Servicios
 main{
     .servicios{
         @include medidas (100%, 400px);
